@@ -52,3 +52,29 @@ limit 2;
 
 ```
 
+## 修改語法
+```sql
+
+UPDATE student
+SET name ='米奇',major='租賃管理'
+WHERE student_id=2;
+
+```
+
+## 刪除一筆語法
+```sql
+
+delete from student 
+where student_id=1;
+
+```
+
+
+## 刪除多筆語法
+```sql
+
+delete from student 
+where student_id in (2,3,4);
+
+```
+
