@@ -40,3 +40,15 @@ VALUES
 ('小柱', '生物'),
 ('信忠', '英語');
 ```
+
+## 取得資料
+```sql
+select name, major from  student;
+
+select name, major from  student
+--where major in ('歷史')
+order by student_id desc
+limit 2;
+
+```
+
