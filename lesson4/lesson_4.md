@@ -1,4 +1,4 @@
-## 更改日期型態
+## 更改日期型別和更新資串成為Date
 ```sql
 
 ALTER TABLE world
