@@ -24,4 +24,10 @@ def main():
 if __name__ == "__main__":
     main()
 
-  
+# 這個程式會連線到 PostgreSQL 資料庫並確認連線是否成功
+# 確保在執行前已安裝 psycopg2 庫
+# 可以使用 pip install psycopg2-binary 安裝 psycopg2 庫
+# 注意：在 Docker 環境中，host.docker.internal 用於連接到主機的 PostgreSQL 服務
+# 如果在非 Docker 環境中，需要將 host 參數改為實際的主機地址或 IP
+
+
