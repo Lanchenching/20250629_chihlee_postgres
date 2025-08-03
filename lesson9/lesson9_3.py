@@ -9,7 +9,7 @@ def create_connection():
         host="host.docker.internal",  # 使用 Docker 的內部網路地址
         database="postgres",
         user="postgres",
-        password="raspberry"
+        password="raspberry",
         port="5432"  # PostgreSQL 的預設端口
      )
     return conn
