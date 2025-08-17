@@ -6,7 +6,7 @@ st.sidebar.header("2023年各站進出人數")
 st.subheader("進出站人數顯示區")
 
 stations = datasource.get_stations_names()
-station=st.sidebar.selectbox(
+station = st.sidebar.selectbox(
     "請選擇車站",
     stations,
 )
