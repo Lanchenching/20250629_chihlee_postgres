@@ -4,6 +4,7 @@
 Here's our first attempt at using data to create a table:
 """
 
+"""
 import streamlit as st
 import pandas as pd
 df = pd.DataFrame({
@@ -15,3 +16,9 @@ df
 
 
 ## streamlit為快速顯示資料給人看
+"""
+
+import streamlit as st
+import pandas as pd
+st.title("台鐵車站資訊")
+st. header("2023年每日各站進出站人數")
