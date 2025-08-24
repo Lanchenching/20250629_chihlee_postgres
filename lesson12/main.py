@@ -22,7 +22,7 @@ if stations is None:
     st.stop()
 
 
-common_stations = ['臺北','桃園','新竹','台中','臺南','高雄','其它']
+common_stations = ['臺北','桃園','新竹','臺中','臺南','高雄','其它']
 
 choice = st.sidebar.radio("快速選擇常用車站", common_stations)
 
@@ -78,11 +78,14 @@ else:
         if isinstance(data, pd.DataFrame):
             df = data
         else:
-            df = pd.DataFrame(data)
+            # 指定欄位名稱
+            columns = ["日期", "車站", "進站人數", "出站人數"]
+            df = pd.DataFrame(data, columns=columns)
     except Exception:
         # 如果直接轉換失敗，嘗試先將資料轉為 list（支援 generator 等）
         try:
-            df = pd.DataFrame(list(data))
+            columns = ["日期", "車站", "進站人數", "出站人數"]
+            df = pd.DataFrame(list(data), columns=columns)
         except Exception as e:
             st.error(f"處理資料時發生錯誤: {e}")
             df = None
